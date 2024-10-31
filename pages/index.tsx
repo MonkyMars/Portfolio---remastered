@@ -36,10 +36,11 @@ const Home: NextPage = () => {
   ];
 
   const nav_icons: navIcons[] = [
+{ label: "Contact", href: "#aside", src: "/send.png" },
     { label: "About me", href: "#about", src: "/id-card.png" },
-    { label: "Contact", href: "#aside", src: "/send.png" },
-    { label: "Projects", href: "#projects", src: "/code.png" },
+    
     { label: "Experience", href: "#experience", src: "/trophy.png" },
+{ label: "Projects", href: "#projects", src: "/code.png" },
   ];
 
   const experiences: experiences[] = [
