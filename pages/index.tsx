@@ -216,6 +216,7 @@ const Home: NextPage = () => {
             ))}
           </main>
         </section>
+        <footer className={styles.footer}>{`© 2024 All Rights Reserved By Levi Noppers.`}</footer>
       </main>
     </>
   );
