@@ -104,6 +104,23 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{"Levi Noppers | Full Stack Developer"}</title>
+        <meta name="description" content="Levi Noppers - Full Stack Developer from The Hague, Netherlands. Specializing in front-end development and web applications." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        
+        {/* Open Graph / Social Media */}
+        <meta property="og:title" content="Levi Noppers | Full Stack Developer" />
+        <meta property="og:description" content="Full Stack Developer specializing in web applications and front-end development" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/code.png" />
+        
+        {/* Keywords and additional info */}
+        <meta name="keywords" content="Levi Noppers, Full Stack Developer, Web Development, Front-end, React, Next.js, TypeScript" />
+        <meta name="author" content="Levi Noppers" />
+        <meta name="robots" content="index, follow" />
+        
+        <link rel="icon" href="/code.png" />
+        <link rel="canonical" href="https://levinoppers-portfolio.vercel.app" />
       </Head>
       <main className={styles.main_container}>
         {/* Aside */}
