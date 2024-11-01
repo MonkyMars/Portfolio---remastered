@@ -36,10 +36,11 @@ const Home: NextPage = () => {
   ];
 
   const nav_icons: navIcons[] = [
+{ label: "Contact", href: "#aside", src: "/send.png" },
     { label: "About me", href: "#about", src: "/id-card.png" },
-    { label: "Contact", href: "#aside", src: "/send.png" },
-    { label: "Projects", href: "#projects", src: "/code.png" },
+    
     { label: "Experience", href: "#experience", src: "/trophy.png" },
+{ label: "Projects", href: "#projects", src: "/code.png" },
   ];
 
   const experiences: experiences[] = [
@@ -62,8 +63,8 @@ const Home: NextPage = () => {
   ];
 
   const projects: projects[] = [
-    { title: 'CarList', description: `CarList is a Next.js project I made own my own, It hasn't got its own database but rather uses multiple API's to fetch the data, such as model names, specs and images. Use the feature CarFinder to find the specs of the entered car. CarList uses 100% TypeScript and Scss.`, date: '26/10/2024', image: '/carlists.png'},
-    { title: 'Something', description: `Something is a webstore I designed in JavaScript and TypeScript combined with Next.js. The webapp features logging in with jwt and next-auth as well as saving user preferences. The backend is in TypeScript and I'm SupaBase for hosting the data, such as accounts and real time cart. For the design and mainly the fonts I took inspiration from Nothing.tech©.`, date: '16/9/2024', image: '/something-keyboards.png'},
+    { title: 'CarList', description: `CarList is a Next.js project I made on my own, It hasn't got its own database but rather uses multiple API's to fetch the data, such as model names, specs and images. Use the feature CarFinder to find the specs of the entered car. CarList uses 100% TypeScript and Scss.`, date: '26/10/2024', image: '/carlists.png'},
+    { title: 'Something', description: `Something is a webstore I designed in JavaScript and TypeScript combined with Next.js. The webapp features logging in with jwt and next-auth as well as saving user preferences. The backend is in TypeScript and SupaBase is used for hosting the data, such as accounts and real time cart. For the design and mainly the fonts I took inspiration from Nothing.tech©.`, date: '16/9/2024', image: '/something-keyboards.png'},
     { title: 'SchoolTool', description: 'SchoolTool is an ELO (electronic learn environment). You can use SchoolTool to take notes in class, check your homework and assignments as well as plan your entire day using the build in calendar. This project is in JavaScript, Next.js since I did not know TypeScript at the time.', date: '15/8/2024', image: '/schooltool.png'},
     { title: 'ChatNest', description: `ChatNest was my first real project. I made multiple versions and each version topped the previous one looking at complexity. The first one was in plain HTML, CSS and Js, and the last one was in Next.js. ChatNest is a social media platform including private messaging, account creation and updating, posting stories (e.g., tweets) and having full customization over your profile`, date: '23/8/2024', image: '/chatnest.png' }
   ]
