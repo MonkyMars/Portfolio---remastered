@@ -286,6 +286,9 @@
     max-width: 80vw !important;
     min-width: 80vw !important;
     margin: 0 !important;
+    & img{
+      width: 90% !important;
+    }
   }
   .experience_section {
     align-items: center;
