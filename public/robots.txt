@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://levinoppers-portfolio.vercel.app/sitemap.xml 
