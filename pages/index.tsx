@@ -144,7 +144,7 @@ const Home: NextPage = () => {
           </button>
           <div className={styles.details}>
             <div className={styles.detail}>
-              <div>
+              <div onClick={() => router.push('mailto:levi.laptop@hotmail.com')}>
                 <Image
                   src={"/email.png"}
                   alt="email"
