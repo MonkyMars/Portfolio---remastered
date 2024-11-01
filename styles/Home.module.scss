@@ -279,19 +279,21 @@
   }
 
   .main_container aside,
-  .Nav,
   .about_section,
   .experience_section,
   .projects_section {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 100vw !important;
+    width: 80vw !important;
+    max-width: 80vw !important;
+    min-width: 80vw !important;
     margin: 0 !important;
-    & ul {
-      height: 100px !important;
-    }
   }
   .experience_section {
     align-items: center;
+  }
+  .Nav{
+    width: 98vw !important;
+    & ul {
+      height: 100px !important;
+    }
   }
 }
