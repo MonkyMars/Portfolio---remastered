@@ -88,6 +88,12 @@ const Home: NextPage = () => {
       date: "23/8/2024",
       image: "/chatnest.png",
     },
+    {
+      title: 'Amber Gallery',
+      description: 'A personal gallery for my girlfriend where she can save her artwork with selected categories.', // need to further detail description
+      date: '04/11/2024',
+      image: '/' // still need to add image
+    }
   ];
 
   useEffect(() => {
