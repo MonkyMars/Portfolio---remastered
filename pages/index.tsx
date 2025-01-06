@@ -3,14 +3,15 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { MapPinHouse, Mail, Send, IdCard, Trophy, Code } from "lucide-react";
 
 interface navIcons {
   label: string;
   href: string;
-  src: string;
+  src: React.ComponentType<{ size?: string | number }>;
 }
 
 interface experiences {
@@ -36,29 +37,36 @@ const Home: NextPage = () => {
   ];
 
   const nav_icons: navIcons[] = [
-    { label: "Contact", href: "#aside", src: "/send.png" },
-    { label: "About me", href: "#about", src: "/id-card.png" },
-
-    { label: "Experience", href: "#experience", src: "/trophy.png" },
-    { label: "Projects", href: "#projects", src: "/code.png" },
+    { label: "Contact", href: "#aside", src: Send },
+    { label: "Me", href: "#about", src: IdCard },
+    { label: "Experience", href: "#experience", src: Trophy },
+    { label: "Projects", href: "#projects", src: Code },
   ];
 
   const experiences: experiences[] = [
     {
-      title: "Fullstack hobbyist developer",
-      date: "Present",
-      description: "Not employed, but making projects to learn and improve",
+      title: "Starting to code",
+      date: "27/11/2022",
+      description: "Built my first discord bot in Python",
     },
+
     {
       title: "Coding seriously",
       date: "29/12/2023",
       description:
         "Realized coding was my dream and started to take it seriously",
     },
+
     {
-      title: "Starting to code",
-      date: "27/11/2022",
-      description: "Built my first discord bot in Python",
+      title: "Internship @Q42",
+      date: "06/01/2025",
+      description:
+        "Internship at Q42, a software development company in The Hague",
+    },
+    {
+      title: "Fullstack hobbyist developer",
+      date: "Present",
+      description: "Not employed, but making projects to learn and improve",
     },
   ];
 
@@ -87,6 +95,13 @@ const Home: NextPage = () => {
       description: `ChatNest was my first real project. I made multiple versions and each version topped the previous one looking at complexity. The first one was in plain HTML, CSS and Js, and the last one was in Next.js. ChatNest is a social media platform including private messaging, account creation and updating, posting stories (e.g., tweets) and having full customization over your profile`,
       date: "23/8/2024",
       image: "/chatnest.png",
+    },
+    {
+      title: "Frame The Beat",
+      description:
+        "Frame The Beat is a collection of albumcovers. Save and share your favorite albumcovers with your friends. Frame The Beat is made in Next.js and TypeScript, the backend is in TypeScript and uses SupaBase for hosting the data.",
+      date: "12/7/2024",
+      image: "/frame-the-beat.png",
     },
   ];
 
@@ -137,7 +152,7 @@ const Home: NextPage = () => {
       <main className={styles.main_container}>
         {/* Aside */}
 
-        <aside id="aside" data-aos="fade-down">
+        <aside id="aside" data-aos="fade-down" className="aside">
           <header>
             <h2>{"Levi Noppers"}</h2>
             <span>{"Fullstack web developer"}</span>
@@ -159,13 +174,7 @@ const Home: NextPage = () => {
               <div
                 onClick={() => router.push("mailto:levi.laptop@hotmail.com")}
               >
-                <Image
-                  src={"/email.png"}
-                  alt="email"
-                  aria-label="email"
-                  width={30}
-                  height={30}
-                />
+                <Mail size={30} />
                 <span>{"Email"}</span>
               </div>
               <label>{"Levi.laptop@hotmail.com"}</label>
@@ -177,13 +186,7 @@ const Home: NextPage = () => {
               }
             >
               <div>
-                <Image
-                  src={"/map.png"}
-                  alt="email"
-                  aria-label="email"
-                  width={30}
-                  height={30}
-                />
+                <MapPinHouse size={30} />
                 <span>{"Location"}</span>
               </div>
               <label>{"The Hague, Netherlands"}</label>
@@ -197,13 +200,7 @@ const Home: NextPage = () => {
           <ul>
             {nav_icons?.map((icon, index) => (
               <li key={index} onClick={() => router.push(icon.href)}>
-                <Image
-                  src={icon.src}
-                  alt={icon.label}
-                  aria-label={icon.label}
-                  width={35}
-                  height={35}
-                />
+                <icon.src size={30} />
                 <span>{icon.label}</span>
               </li>
             ))}

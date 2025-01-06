@@ -7,6 +7,7 @@ body{
     overflow-y: auto;
     max-width: 100%;
     background-color: var(--background-color);
+    font-family: var(--main-font-family);
     & img{
         user-select: none;
     }
@@ -19,6 +20,8 @@ body{
     --main-font-family: 'poppins', 'raleway', 'roboto';
     --button-font-family: 'rubik', 'poppins';
     --theme-accents: linear-gradient(to right, #db5318, #e573ff);
+    --text-primary: #fff;
+    --text-secondary: #ccc;
 }
 
 * {
