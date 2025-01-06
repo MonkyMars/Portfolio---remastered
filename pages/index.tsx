@@ -97,6 +97,12 @@ const Home: NextPage = () => {
       image: "/chatnest.png",
     },
     {
+      title: 'Amber Gallery',
+      description: 'A personal gallery for my girlfriend where she can save her artwork with selected categories.', // need to further detail description
+      date: '04/11/2024',
+      image: '/' // still need to add image
+    },
+    {
       title: "Frame The Beat",
       description:
         "Frame The Beat is a collection of albumcovers. Save and share your favorite albumcovers with your friends. Frame The Beat is made in Next.js and TypeScript, the backend is in TypeScript and uses SupaBase for hosting the data.",
