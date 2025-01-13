@@ -29,12 +29,11 @@ interface projects {
 const Home: NextPage = () => {
   const router = useRouter();
   const about_me_text = [
-    `I'm Levi Noppers, a 15-year-old software engineer from The Hague, the Netherlands, with a passion for developing web applications.`,
-    `Over the past two years, I’ve dedicated myself to learn coding, I mainly focus on the front-end. My journey as a software developer began when I was 12 and wanted to create my first Discord Bot, since then I've improved a lot at coding, day in and day out spent on coding new web-apps.`,
-    `I specialize in the front-end and a little back-end, making sure that every project I work on looks professional and works as intended. My experience includes developing multiple fully-functional websites, creating a database-API.`,
-    `I’m open to learning and would like to improve my skills, whether it’s by exploring a new framework, or finding better solutions to my problems`,
-    `I speak English and Dutch both fluently so in the future I look forward to meeting fellow developers from all over the planet and settling in a team!`,
-  ];
+    `Hi, I’m Levi. I’m a 15-year-old software engineer with a passion for building web applications. Over the past two years, I’ve dedicated myself to learning how to code, focusing mainly on front-end development.`,
+    `I specialize in front-end development, with a bit of back-end experience as well. I make sure every project I work on not only looks professional but also functions exactly as it should. So far, I’ve developed multiple fully functional websites and even created a database API.`,
+    `I’m always open to learning and improving my skills. Whether it’s exploring a new framework, finding better solutions to problems, or diving deeper into back-end development, I’m excited to keep growing as a developer.`,
+    `I’m fluent in both English and Dutch, and in the future, I look forward to connecting with fellow developers from around the world and finding my place in a team.`,
+];
 
   const nav_icons: navIcons[] = [
     { label: "Contact", href: "#aside", src: Send },
